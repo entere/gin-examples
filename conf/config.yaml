@@ -1,0 +1,22 @@
+runmode: debug               # 开发模式, debug, release, test
+addr: :8080                  # HTTP绑定端口
+name: micro-gin              # API Server的名字
+url: http://127.0.0.1:8080   # pingServer函数请求的API服务器的ip:port
+max_ping_count: 10           # pingServer函数尝试的次数
+env_prefix: CODEISLAND       # 读取环境变量的前缀为envPrefix
+
+jwt:
+  secret: E5EhdmQEuKIRxgR1PskpB6XyLuCxNALc
+  exp_gap_time: 24            # 24小时后过期
+  
+db: 
+  name: codeisland_feature
+  addr: 127.0.0.1:3306
+  username: root
+  password: 123456
+
+docker_db: 
+  name: codeisland_feature
+  addr: 127.0.0.1:3306
+  username: root
+  password: 123456
